@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<!-- Tag principale di un qualsiasi file html che contiene tutto -->
+<html lang="it" dir="ltr">
+
+<!-- Tag con i dati di intestazione della pagina, inclusione di altri file (es. js, css ecc), definizione di viewport, codice css, codice js ecc -->
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <!-- Titolo della nostra pagina web (è quello visualizzato in alto nella tab del browser) -->
+    <title>1 - HTML tags</title>
+    <!-- Codice CSS scritto direttamente all'interno del file html -->
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        article {
+            background-color: white;
+        }
+
+        table, td, th{
+            border: 1px solid black;
+            border-spacing: 0px;
+        }
+
+        th{
+            background-color: lightgrey;
+        }
+    </style>
+
+</head>
+
+<!-- Tag contenente il corpo della pagina ovvero tutto il contenuto che deve essere effettivamente mostrato -->
+
+<body>
+    <h1>Esempio 1 - HTML tags</h1>
+
+    <article>
+        <h2>Titoli</h1>
+            <hr> <!-- Linea orizzontale -->
+            <h1>Questo è un titolo <i>&lt;h1&gt;</i>.</h1>
+            <h2>Questo è un titolo <i>&lt;h2&gt;</i>.</h2>
+            <h3>Questo è un titolo <i>&lt;h3&gt;</i>.</h3>
+            <h4>Questo è un titolo <i>&lt;h4&gt;</i>.</h4>
+            <h5>Questo è un titolo <i>&lt;h5&gt;</i>.</h5>
+            <h6>Questo è un titolo <i>&lt;h6&gt;</i>.</h6>
+    </article>
+
+    <article>
+        <h2>Paragrafi, stili e citazioni</h1>
+            <hr>
+            <p>Questo è un paragrafo <i>&lt;p&gt;</i>.</p>
+            <p><b>Questo testo è in grassetto <i>&lt;b&gt;</i>.</b></p>
+            <p><i>Questo testo è in corsivo <b>&lt;b&gt;</b>.</i></p>
+            <p><u>Questo testo è sottolineato <i>&lt;u&gt;</i>.</u></p>
+            <p><q>Questa è una citazione <i>&lt;q&gt;</i>. </q><cite>- JB</cite></p>
+            <p>Qui c'è una data <time datetime="2023-02-09">09/02/2023</time></p>
+            <p>Qui,<br>in questo paragrafo<br>ci sono<br>dei capo riga</p>
+            <p>Qui c'è un po di chimica H<sub>2</sub>O e un po di matematica 5<sup>3</sup>.</p>
+    </article>
+
+    <article>
+        <h2>Liste</h1>
+            <hr>
+            <!-- Unordered List -->
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <!-- Ordered List -->
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol>
+            <!-- Ordered + Unordered List -->
+            <ol>
+                <li>Elemento 1
+                    <ul>
+                        <li>Sotto elemento 1</li>
+                        <li>Sotto elemento 2</li>
+                    </ul>
+                </li>
+                <li>Elemento 2
+                    <ul>
+                        <li>Sotto elemento 1</li>
+                    </ul>
+                </li>
+            </ol>
+            <!-- Definition List -->
+            <dl>
+                <dt>Elemento 1</dt>
+                <dd>Definizione 1</dd>
+                <dd>Definizione 2</dd>
+                <dt>Elemento 2</dt>
+                <dd>Definizione 1</dd>
+            </dl>
+    </article>
+
+    <article>
+        <h2>Media</h1>
+            <hr>
+            <!-- Immagine esterna (inclusa tramite link internet) -->
+            <img src="https://cdn.wolterskluwer.io/wk/fundamentals/1.x.x/logo/assets/medium.svg"
+                alt="Wolters Kluwer Logo">
+            <!-- Immagine locale -->
+            <img src="img/WK sede.jpg" alt="Wolters Kluwer Sede" width="400">
+            <!-- Iframe (incorporare pagine o media esterni, es. video YouTube) -->
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+                frameborder="0"></iframe>
+    </article>
+
+    <article>
+        <h2>Links</h2>
+        <hr>
+        <!-- L'attributo target = "_blank" indica che il link deve essere aperto in un'altra tab -->
+        <p>Quest è un link a <a href="https://google.it" target="_blank">Google</a></p>
+        <p>Questa immagine è un link <a href="https://wolterskluwer.com" target="_blank"><img
+                    src="https://cdn.wolterskluwer.io/wk/fundamentals/1.x.x/logo/assets/medium.svg"
+                    alt="Wolters Kluwer Logo"></a></p>
+    </article>
+
+    <article>
+        <h2>Campi</h2>
+        <hr>
+        <!-- Bottone standard, in alternativa si può usare il tag button anzichè input -->
+        <input type="button"><br>
+        <!-- Checkbox -->
+        <input type="checkbox"><br>
+        <!-- Palette colori -->
+        <input type="color"><br>
+        <!-- Data -->
+        <input type="date"><br>
+        <!-- Data e ora -->
+        <input type="datetime-local"><br>
+        <!-- Email (*) -->
+        <input type="email"><br>
+        <!-- Selezione file locale -->
+        <input type="file"><br>
+        <!-- Campo nascosto* -->
+        <input type="hidden"><br>
+        <!-- Immagine -->
+        <input type="image"><br>
+        <!-- Mese e anno -->
+        <input type="month"><br>
+        <!-- Numero  -->
+        <input type="number"><br>
+        <!-- Password -->
+        <input type="password"><br>
+        <!-- Radio button -->
+        <input type="radio"><br>
+        <!-- Range -->
+        <input type="range"><br>
+        <!-- Bottone per reset (*) -->
+        <input type="reset"><br>
+        <!-- Ricerca -->
+        <input type="search"><br>
+        <!-- Bottone per invio (*) -->
+        <input type="submit"><br>
+        <!-- Telefono -->
+        <input type="tel"><br>
+        <!-- Testo -->
+        <input type="text"><br>
+        <!-- Ora -->
+        <input type="time"><br>
+        <!-- URL (*) -->
+        <input type="url"><br>
+        <!-- Settimana, mese e anno -->
+        <input type="week"><br>
+        <!-- Area di testo -->
+        <textarea cols="30" rows="10"></textarea><br>
+        <!-- Combobox -->
+        <select>
+            <option value="visual-studio">Visual Studio 2022</option>
+            <option value="visual-studio-code">Visual Studio Code</option>
+            <option value="visual-foxpro">Visual FoxPro</option>
+        </select>
+        <br>
+        <!-- Combobox raggruppate -->
+        <select>
+            <optgroup label="Visual Studio 2022">
+                <option value="csharp">C-Sharp</option>
+                <option value="dotnet">.NET</option>
+                <option value="blazor">Blazor</option>
+            </optgroup>
+            <optgroup label="Visual Studio Code">
+                <option value="nodejs">Nodejs</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </optgroup>
+            <optgroup label="Visual FoxPro">
+                <option value="foxpro">FoxPro</option>
+            </optgroup>
+        </select>
+
+        <!-- (*) Questi input a video sembrano dei normalissimi campi testo ma se vengono inseriti all'interno di una form 
+            fanno scattare in automatico determinati controlli standard sul contenuto inserito -->
+    </article>
+
+    <article>
+        <h2>Tabelle</h2>
+        <hr>
+        <table>
+            <tr>
+                <th>IDE</th>
+                <th>Versione</th>
+                <th>Prezzo</th>
+                <th>Linguaggi</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Visual Studio 2022</td>
+                <td>Community</td>
+                <td>Free</td>
+                <td>C#, Blazor, .NET</td>
+            </tr>
+            <tr>
+                <td>Developer</td>
+                <td>Tanto</td>
+                <td>C#, Blazor, .NET</td>
+            </tr>
+            <tr>
+                <td>Enterprise</td>
+                <td>Troppo</td>
+                <td>C#, Blazor, .NET</td>
+            </tr>
+            <tr>
+                <td>Visual Studio Code</td>
+                <td colspan="2">Free</td>
+                <td>Nodejs, HTML, CSS, Javascript</td>
+            </tr>
+            <tr>
+                <td>Visual FoxPro</td>
+                <td>Portable</td>
+                <td>Free</td>
+                <td>FoxPro</td>
+            </tr>
+        </table>
+    </article>
+</body>
+
+</html>
