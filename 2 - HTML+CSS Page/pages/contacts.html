@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2 - HMTL+CSS Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Il mio foglio di stile -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header class="header">
+        <h1>CONTACTS</h1>
+        <nav>
+            <a href="/"><span class="material-icons">home</span>
+                <p>Home</p>
+            </a>
+            <a href="/pages/about.html"><span class="material-icons">info</span>
+                <p>About</p>
+            </a>
+            <a href="/pages/customers.html"><span class="material-icons">people</span>
+                <p>Customers</p>
+            </a>
+            <a href="/pages/contacts.html" class="header-selected"><span class="material-icons">login</span>
+                <p>Contacts</p>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><span class="material-icons">chevron_right</span>
+                    <p>Chapter 1</p>
+                </li>
+                <li><span class="material-icons">chevron_right</span>
+                    <p>Chapter 2</p>
+                </li>
+                <li><span class="material-icons">chevron_right</span>
+                    <p>Chapter 3</p>
+                </li>
+            </ul>
+        </aside>
+        <section class="content-wrapper">
+            <h2>Content</h2>
+            <p>Descrizione della sezione</p>
+            <br>
+            <form action="success.html" method="get">
+                <div class="fields-divider">
+                    <div class="field-wrapper">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="field-wrapper">
+                        <label for="cognome">Cognome</label>
+                        <input type="text" name="cognome" id="cognome" required>
+                    </div>
+                </div>
+                <div class="fields-divider">
+                    <div class="field-wrapper">
+                        <label for="data-nascita">Data di Nascita</label>
+                        <input type="date" name="data-nascita" id="data-nascita">
+                    </div>
+                </div>
+                <div class="fields-divider">
+                    <div class="field-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="me@example.com" required>
+                    </div>
+                    <div class="field-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                </div>
+                <div class="fields-divider">
+                    <div class="field-wrapper">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" name="telefono" id="telefono" placeholder="333-333-4444"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="field-wrapper">
+                        <label for="sito-web">Sito Web</label>
+                        <input type="url" name="sito-web" id="sito-web" placeholder="http://example.com">
+                    </div>
+                </div>
+                <div class="fields-divider">
+                    <fieldset id="ide">
+                        <legend>Scegli la tua IDE:</legend>
+                        <div class="field-wrapper">
+                            <input type="radio" name="radio-ide" id="radio-vs2022">
+                            <label for="radio-vs2022">Visual Studio 2022</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="radio" name="radio-ide" id="radio-vscode" checked>
+                            <label for="radio-vscode">Visual Studio Code</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="radio" name="radio-ide" id="radio-foxpro">
+                            <label for="radio-foxpro">Visual FoxPro</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="fields-divider">
+                    <div class="field-wrapper">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked>
+                        <label for="newsletter">Iscrivimi alla newsletter</label>
+                    </div>
+                </div>
+                <input type="reset">
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>Footer</h2>
+        <ul>
+            <li>Jacopo Bidese</li>
+            <li><a href="mailto:jacopo.bidese@wolterskluwer.com">jacopo.bidese@wolterskluwer.com</a></li>
+            <li><a href="tel:+390445363150">+39 0445363150</a></li>
+        </ul>
+    </footer>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
